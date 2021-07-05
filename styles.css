@@ -1,0 +1,80 @@
+body{
+font-family:Arial, Helvetica, sans-serif;
+
+}
+a{
+    text-decoration:none;
+    color:black;
+    margin:3px;
+    font-size:15px;
+}
+a:hover{
+    text-decoration:underline;
+}
+.main-box{
+    display:grid;
+    height:99vh;
+    place-items:center;
+    grid-template-columns: [col-1]1fr [col-2]1fr [col-3]9fr [col-4]1fr [col-5]1fr [col-6]1fr [col-7]1fr[col-9];
+    grid-template-rows: 40px 1fr 2fr 50px;
+    grid-template-areas:
+    "about store space gmail images googleApps profileImg"
+    "google google google google google google google"
+    "middle middle middle middle middle middle middle"
+    "footer footer footer footer footer footer footer" ;
+    column-gap:10px;
+}
+
+.middle{
+    grid-area:middle;
+    ;
+}
+.footer{
+    grid-area:footer;
+}
+.about{
+    grid-area: about;
+    margin:3px;
+}
+.store{
+    grid-area:store;
+    margin:3px;
+}
+.gmail{
+    grid-area:gmail;
+    margin: 3px;
+}
+.images{
+    grid-area:images;
+    margin:3px;
+}
+.googleApps{
+    grid-area:googleApps;
+    margin:3px;
+}
+.profileImg{
+    grid-area:profileImg;
+    margin:3px;
+}
+.space{
+    grid-area:space;
+}
+.google{
+    text-align:center;
+    grid-area:google;
+    
+}
+.textbox{
+        display:flex;
+    height:6vh;
+    width:450px;
+    border-radius:100px;
+    text-align: center;
+    transform: translateY(-250%)
+}
+h1{
+    font-size:70px;
+}
+img{
+    transform:translateY(25%)
+}
